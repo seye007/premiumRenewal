@@ -1,0 +1,39 @@
+﻿@model OtpModel
+@{
+	ViewData["Title"] = "Verification";
+}
+@section style{
+	<link href="~/css/verification.css" rel="stylesheet" />
+}
+<div class="card form-sha">
+  <div class="card-header">
+    <h5 class="card-title">OTP Verification</h5>
+  </div>
+  <div class="card-body justify-content-center align-items-center">
+		<div class="d-flex justify-content-center align-items-center">
+			<div class="text-center">
+				<h4>Enter OTP Code</h4>
+				<header class="p-3">
+					<i class="bx bxs-check-shield text">
+						Kindly enter the verification code sent to +2347067690681
+					</i>
+				</header>
+				<form asp-action="Verification" method="post">
+					<div class="input-field">
+						<input asp-for="Input1" type="text" class="text-center" />
+						<input asp-for="Input2"  type="text" class="text-center" disabled />
+						<input asp-for="Input3" type="text" class="text-center" disabled />
+						<input asp-for="Input4" type="text" class="text-center" disabled />
+					</div>
+					<p class="text p-2">Didn't recieve an OTP?</p>
+					<a href="#">Resend OTP</a>
+					<button type="submit" asp-action="Verification" class="btn py-2 px-2 mt-3 text-center button">
+						Verify OTP</button>
+				</form>
+			</div>
+		</div>
+  </div>
+</div>
+@section scripts{
+	<script src="~/js/verification.js"></script>
+}

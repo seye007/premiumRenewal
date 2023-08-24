@@ -1,0 +1,134 @@
+﻿<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="~/lib/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true">
+	<link href="~/lib/fontawesome/css/all.min.css" rel="stylesheet" asp-append-version="true">
+	<link href="~/lib/fontawesome/css/fontawesome.min.css" rel="stylesheet" asp-append-version="true">
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+	<link rel="stylesheet" href="~/css/shortcodes.css" asp-append-version="true">
+  @await RenderSectionAsync("style", false)
+</head>
+<body>
+	<div class="wrapper">
+		<div class="nav-section">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+				<div class="container">
+					<a class="" href="#">
+						<img src="~/img/CLA.png" class="logo" width="100" alt="Custodian logo">
+					</a>
+					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="navbar-collapse collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item text-center">
+								<a class="nav-link active nav-links-items" href="#">Home</a>
+							</li>
+							<li class="nav-item text-center">
+								<a class="nav-link nav-links-items drop-down-icon" href="#">Products</a>
+							</li>
+							<li class="nav-item text-center">
+								<a class="nav-link nav-links-items" href="#">About Us</a>
+							</li>
+							<li class="nav-item text-center">
+								<a class="nav-link nav-links-items drop-down-icon" href="#">News</a>
+							</li>
+							<li class="nav-item text-center">
+								<a class="nav-link nav-links-items" href="#">Investors</a>
+							</li>
+							<li class="nav-item text-center">
+								<a class="nav-link nav-links-items" href="#">Contact</a>
+							</li>
+							<li class="nav-item d-flex justify-content-center align-text-center">
+								<div style="background-color: #900000;" class="p-1">
+									<a class="nav-link text-white">
+										SELF
+										SERVICE
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container py-5">
+			@RenderBody()
+		</div>
+    <div class="container-fluid px-2 py-4 footer">
+      <div class="mx-2 row py-5">
+        <div class="col-md-4 col-sm-12 px-5">
+          <img src="~/img/CLA_White.png" width="300px" class="img-fluid" alt="">
+          <div class="socials">
+            <h5 class="socials">Follow us social media</h5>
+            <div class="row">
+              <div class="col-sm-2">
+                <img src="~/img/Asset 5.png" width="40" alt="facebook">
+              </div>
+              <div class="col-sm-2">
+                <img src="~/img/Asset 6.png" width="40" alt="facebook">
+              </div>
+              <div class="col-sm-2">
+                <img src="~/img/Asset 7.png" width="40" alt="facebook">
+              </div>
+              <div class="col-sm-2">
+                <img src="~/img/Asset 8.png" width="40" alt="facebook">
+              </div>
+              <div class="col-sm-2">
+                <img src="~/img/Asset 9.png" width="40" alt="facebook">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 px-5">
+          <div>
+            <h6 class="futura-bold footer-item">Our Products</h6>
+            <div class="row pt-3">
+              <div class="col-md-6 col-sm-12">
+                <div>
+                  <div class="p-1">Education Endowment</div>
+                  <div class="p-1">Life Time Harvest</div>
+                  <div class="p-1">Ordinary Endowment</div>
+                  <div class="p-1"> Retiree Life Annuity</div>
+                  <div class="p-1">Immediate Annuity</div>
+                  <div class="p-1">Deferred Annuity</div>
+                  <div class="p-1">Term Assurance</div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div>
+                  <div class="p-1">Whole Life Assurance</div>
+                  <div class="p-1">Dignity Plan</div>
+                  <div class="p-1">Tuition Protection</div>
+                  <div class="p-1">Capital Builder</div>
+                  <div class="p-1">Esusu Shield</div>
+                  <div class="p-1">Personal Provident Plan</div>
+                  <div class="p-1">Investment Plus Plan</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 px-5 ">
+          <div>
+            <h6 class="futura-bold footer-item">Custodian Groups</h6>
+            <div class="pt-3">
+              <div class="p-1">Custodian Investment Plc</div>
+              <div class="p-1">Custodian and Alliad Insurance Ltd</div>
+              <div class="p-1">Custodian Life Assurance Ltd</div>
+              <div class="p-1">Custodian Trustees Ltd</div>
+              <div class="p-1">CrusaderSterling Pension Ltd</div>
+              <div class="p-1">UPDC Plc</div>
+              <div class="p-1">UPDC FM Ltd Assurance</div>
+              <div class="p-1">Interstate Securities Ltd.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    @await RenderSectionAsync("scripts", false)
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿@model PolicyViewModel
+@{
+    ViewData["Title"] = "Policy Renewal";
+}
+<div>
+  <div class="card form-sha">
+    <div class="card-header">
+      <h5 class="card-title">Premium Renewal</h5>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 banner-para">
+          <h4>Renew Your Premium with Confidence!</h4>
+          <ul class="benefits-list">
+            <li>
+              <i class="fas fa-shield-alt"></i>
+              <span class="fs-5">Total Protection Guaranteed.</span>
+            </li>
+            <li>
+              <i class="fas fa-money-bill-wave"></i>
+              <span class="fs-5">Save More with Us.</span>
+            </li>
+            <li>
+              <i class="fas fa-hands-helping"></i>
+              <span class="fs-5">Expert Help Always.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12 p-4">
+          <h4 class="mb-3">Renewal Made Easy</h4>
+          <form class="policy-form w-100" method="post" asp-antiforgery="true">
+            <label class="mb-2">Policy Number:</label>
+            <div class="w-100">
+              <label asp-for="PolicyNumber" class="w-100">
+                <input type="text" asp-for="PolicyNumber" class="policy-input" placeholder="Enter your policy number">@*
+                <span>You can get your existing policy number from your existing policy document</span>*@
+              </label>
+              <input type="submit" class="policy-button button" asp-action="index" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
