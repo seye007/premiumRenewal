@@ -1,19 +1,9 @@
 ﻿@{
   ViewData["Title"] = "Payment Confirmation";
 }
-<style>
-  /* Your existing styles here */
-
-  /* Additional styles for thank you page */
-  .thank-you {
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  .certificate-button {
-    margin-top: 20px;
-  }
-</style>
+@section style{
+	<link href="~/css/paymentconfirmation.css" rel="stylesheet" asp-append-version="true" />
+}
 <div class="card form-sha">
 	<div class="card-header">
 		<h5 class="card-title">Payment Confirmation</h5>

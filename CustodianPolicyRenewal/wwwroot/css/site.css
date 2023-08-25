@@ -21,22 +21,8 @@
   .logo {
     width: 8em;
   }
-.nav-section {
-  position: relative;
-  top: 0
-}
 
-.footer {
-  position: relative;
-  bottom: 0
-}
 
-/*.content{
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center
-}*/
 .nav-link,
 .nav-link:visited,
 .nav-link:hover,
@@ -193,10 +179,6 @@
 }
 
 
-
-
-
-
 .info-item {
   margin-bottom: 15px;
 }
@@ -277,49 +259,6 @@
   }
 
 
-
-
-
-
-.confirmation-details {
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-  .confirmation-details h4 {
-    color: #4d4d4d;
-    margin-bottom: 20px;
-  }
-
-  .confirmation-details i {
-    color: #17a2b8;
-    font-size: 3rem;
-  }
-
-  .confirmation-details p {
-    color: #4d4d4d;
-    margin: 5px 0;
-  }
-
-.receipt {
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-  .receipt h4 {
-    color: #4d4d4d;
-    margin-bottom: 20px;
-  }
-
-  .receipt p {
-    color: #4d4d4d;
-    margin: 5px 0;
-  }
-
 .back-button {
   background-color: #17a2b8;
   color: #fff;
@@ -376,4 +315,14 @@ form .button {
   form .button:hover {
     background: #900000
   }
+  
+  @media(max-width:767px){
+    #content-container{
+      height: auto !important;
+    }
+  }
 
+#content-container {
+  height: auto;
+  height: 600px
+}

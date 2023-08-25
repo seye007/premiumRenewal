@@ -79,3 +79,13 @@
 		background-color: #800000;
 		transform: scale(1.05);
 	}
+
+
+#content-container {
+	height: auto;
+}
+
+.card{
+	margin-top: 25px;
+	margin-bottom: 25px
+}
