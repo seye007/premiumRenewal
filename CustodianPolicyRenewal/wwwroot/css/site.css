@@ -8,12 +8,7 @@
     src: url('../fonts/Futura Bk BT Book.ttf') format('truetype');
   }
   
-  body {
-    font-family: 'futura-bk-bt', sans-serif;
-    font-size: 16px;
-    position:absolute;
-    /* background-color: #f1f1f1; */
-  }
+
 
   .bg {
     background-color: #900000;
